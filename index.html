@@ -6,12 +6,108 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Turnly - Community Hospital Of San Theresa</title>
+    <title>Turnly - Healthcare Demo</title>
+    <style>
+      .tly-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        font-family: var(--tly-default-font);
+        padding: 1rem 12rem;
+        background-color: #8961ff;
+        color: white;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 12rem;
+        border-bottom: 1px solid #eaeaea;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-color: #fff;
+      }
+
+      .tly-button {
+        text-decoration: none;
+      }
+
+      .tly-typography-title--is-h1 {
+        font-size: 70px !important;
+        line-height: 85px !important;
+        color: white !important;
+        max-width: 75%;
+      }
+
+      .tly-typography-text {
+        color: azure !important;
+        font-size: 20px !important;
+        max-width: 75%;
+        line-height: 30px !important;
+      }
+
+      @media (max-width: 1100px) {
+        header,
+        .tly-main {
+          padding: 1rem;
+        }
+
+        .tly-typography-title--is-h1 {
+          font-size: 50px !important;
+          line-height: 65px !important;
+          max-width: 90%;
+        }
+
+        .tly-typography-text {
+          font-size: 16px !important;
+          line-height: 25px !important;
+          max-width: 90%;
+        }
+      }
+    </style>
   </head>
-​
+
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-​
+    <header>
+      <div>
+        <a href="https://turnly.app" target="_blank">
+          <img src="https://turnly.app/img/logo.png" alt="Turnly" width="100" />
+        </a>
+      </div>
+      <div>
+        <a
+          href="https://turnly.app"
+          target="_blank"
+          class="tly-button tly-button--is-outline tly-button--is-full tly-button--is-medium tly-button--is-normal tly-button--is-rounded"
+          >Get Turnly</a
+        >
+      </div>
+    </header>
+    <main class="tly-main">
+      <section>
+        <h1
+          class="tly-typography-title tly-typography-title--has-gaps tly-typography-title--is-h1"
+        >
+          A queue management solution for hospitals and clinics
+        </h1>
+        <p class="tly-typography-text tly-typography-text--has-gaps">
+          This is a simple example of how to integrate Turnly widget into your
+          website.
+        </p>
+        <p class="tly-typography-text tly-typography-text--has-gaps">
+          Turnly is a queue management solution for hospitals and clinics. It
+          helps to reduce the waiting time for patients before they see a doctor
+          or nurse. It also helps to reduce the number of patients in the
+          waiting room at the same time.
+        </p>
+      </section>
+    </main>
+
     <!-- Turnly widget begin -->
     <link rel="stylesheet" href="https://static.turnly.app/style.css" />
     <script>
@@ -24,11 +120,11 @@
           design: "rounded",
           primary: {
             color: "#fff",
-            background: "#721e42",
+            background: "#07bcbb",
           },
           secondary: {
             color: "#fff",
-            background: "#34a7e6",
+            background: "#5009b5",
           },
         },
       };
